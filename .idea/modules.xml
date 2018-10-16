@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/serenity-iquit.iml" filepath="$PROJECT_DIR$/serenity-iquit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/serenity-iquit_main.iml" filepath="$PROJECT_DIR$/.idea/modules/serenity-iquit_main.iml" group="serenity-iquit" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/serenity-iquit_test.iml" filepath="$PROJECT_DIR$/.idea/modules/serenity-iquit_test.iml" group="serenity-iquit" />
+    </modules>
+  </component>
+</project>

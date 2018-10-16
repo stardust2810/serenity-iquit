@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: net.serenity-bdd:serenity-screenplay:1.5.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/serenity-bdd/serenity-screenplay/1.5.2/serenity-screenplay-1.5.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
