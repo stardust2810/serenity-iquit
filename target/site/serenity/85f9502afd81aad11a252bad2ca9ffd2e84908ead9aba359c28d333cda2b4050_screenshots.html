@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Automated testing of I QUIT Portal using Serenity and Cucumber</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <a
+                    href="e35851d09d865e3a1764bc3c793cb2234b9dfaf280a3e065033d18dbd6d96392.html">Member Of Public Registers On The I Quit&hellip;</a>
+                > <a
+                    href="85f9502afd81aad11a252bad2ca9ffd2e84908ead9aba359c28d333cda2b4050.html">Participant registers for an account </a>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 17-10-2018 14:47</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Member Of Public Registers On The I Quit Page </span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                In order to participate in the I QUIT 28 days countdown programme
+As a member of public
+I want to register my details in the I QUIT registration page (online)
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="a9233787f1c78ba98303aa7e63e0f6a7583dc4ea6e737e53481ec271854e4469.html">Public Registration
+                                    (capability)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-3x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Participant Registers For An Account
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="scaled_443d2b28107325421ecf8eb2fb59ec5da34e738122e2f73e337398cde25e0674.png" title="* 'Boon Tiong Kee' registers for an account" width="960"/>
+                <img src="031e5cb36b4ba4d229d8944d370ba2b8959cbbd688a2466fed1a49231c4c78b8.png" title="'Boon Tiong Kee' opens the Public registration page" width="960"/>
+                <img src="aa57758ad922f9cff068a68e5524ab659f2f0367b7825a161f2899684eeaf815.png" title="'Boon Tiong Kee' clicks on race" width="960"/>
+                <img src="34c60fbb2a16322dfb97e49e95d83bd475946c12d677a22eb56af114c471930c.png" title="'Boon Tiong Kee' clicks on race" width="960"/>
+                <img src="36248b07316ffb6ce6c77bb6657102d4bca81ef69e57a0ec46f6897cc4a185d2.png" title="'Boon Tiong Kee' clicks on year_of_birth" width="960"/>
+                <img src="3c2930bdf55cea6e49526555247882580c0c6f3fb8b3c08dc117c38b418375af.png" title="'Boon Tiong Kee' clicks on year_of_birth" width="960"/>
+                <img src="588b4c93113d780c0ddb4cc7b2334f510e37cdf1264c5654b3e9de908f814f47.png" title="'Boon Tiong Kee' clicks on have_you_tried_quitting_before" width="960"/>
+                <img src="f96c62569f23ea22908517fde43220eed0ea9e83eeba02721bae5382408a870d.png" title="'Boon Tiong Kee' clicks on have_you_tried_quitting_before" width="960"/>
+                <img src="2fc7ee24bae717f1d53e1b53f5734de2c0973c0c1f507d8a9513e48d2e959d3a.png" title="'Boon Tiong Kee' clicks on do_you_need_quitline_assistance" width="960"/>
+                <img src="3d3a31042fbb71db61d654a0881047048aed73ba0a06d01a1ca63f74e29bd86a.png" title="'Boon Tiong Kee' clicks on do_you_need_quitline_assistance: <span class='success-color'>SUCCESS</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.5.1</span>
+</div>
+</body>
+</html>
