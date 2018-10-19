@@ -9,18 +9,20 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import questions.RegistrationReviewResults;
-import tasks.*;
-import ui.PublicRegistrationPage;
+import tasks.ClickConfirmRegistrationForm;
+import tasks.FillInRegistrationFormCommonFields;
+import tasks.FillInRegistrationFormEOFields;
+import tasks.OpenPublicRegistrationPage;
+import ui.EORegistrationPage;
 
-import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.thucydides.core.annotations.ClearCookiesPolicy.BeforeEachTest;
-import static org.hamcrest.core.Is.is;
 
-public class NewParticipantRegistrationSteps {
+public class EOParticipantRegistrationSteps {
 
-    private static Logger log = LogManager.getLogger(NewParticipantRegistrationSteps.class);
-    private PublicRegistrationPage page = new PublicRegistrationPage();
+    private static Logger log = LogManager.getLogger(EOParticipantRegistrationSteps.class);
+    private EORegistrationPage page = new EORegistrationPage();
 
     //@Managed
     //@Managed(uniqueSession = true, clearCookies = BeforeEachTest, driver="chrome")
@@ -36,13 +38,14 @@ public class NewParticipantRegistrationSteps {
         OnStage.setTheStage(new OnlineCast());
     }
 
-    @Given("^(.*) registers for an account$")
-    public void registers_for_an_account(String actorName) throws Throwable {
+    @Given("^(.*) registers a member of public$")
+    public void registers_a_member_of_public(String actorName) throws Throwable {
         //loads the landing page
         theActorCalled(actorName).wasAbleTo(OpenPublicRegistrationPage.open());
 
         //fills in the step 1 form
         theActorCalled(actorName).attemptsTo(FillInRegistrationFormCommonFields.enterDetails("Jeffrey Ng", "S9999999X", "Chinese", "99999999", "jeffrey_NG@hpb.gov.sg", "111111"));
+        theActorCalled(actorName).attemptsTo(FillInRegistrationFormEOFields.enterDetails("QuitLine", "roadshow 4", "location 6", "company 5", actorName, "2", "This is a test"));
         theActorCalled(actorName).attemptsTo(ClickConfirmRegistrationForm.clickButton());
 
         //show see the review page

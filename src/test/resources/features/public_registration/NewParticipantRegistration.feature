@@ -5,3 +5,6 @@ Feature: Member of public registers on the I QUIT page
   
   Scenario: Participant registers for an account
     * 'Boon Tiong Kee' registers for an account
+
+  Scenario: EO registers a participant
+    * 'Amy Tan' registers_a member of public

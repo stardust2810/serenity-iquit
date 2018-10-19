@@ -1,6 +1,5 @@
 package tasks;
 
-import net.serenitybdd.core.annotations.findby.By;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.ClickOnTarget;
@@ -8,7 +7,6 @@ import net.serenitybdd.screenplay.actions.EnterValueIntoTarget;
 import net.serenitybdd.screenplay.actions.ScrollToTarget;
 import net.serenitybdd.screenplay.actions.SelectFromOptions;
 import net.serenitybdd.screenplay.questions.SelectedStatus;
-import net.serenitybdd.screenplay.questions.Text;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -18,11 +16,10 @@ import ui.PublicRegistrationPage;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver;
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 
-public class FillInRegistrationFormStepOne implements Task {
+public class FillInRegistrationFormCommonFields implements Task {
 
-    private static Logger log = LogManager.getLogger(FillInRegistrationFormStepOne.class);
+    private static Logger log = LogManager.getLogger(FillInRegistrationFormCommonFields.class);
     private final String full_name;
     private final String nric;
     private final String race;
@@ -30,7 +27,7 @@ public class FillInRegistrationFormStepOne implements Task {
     private final String email;
     private final String postal_code;
 
-    protected FillInRegistrationFormStepOne(String full_name, String nric, String race, String mobile, String email, String postal_code) {
+    protected FillInRegistrationFormCommonFields(String full_name, String nric, String race, String mobile, String email, String postal_code) {
         this.full_name = full_name;
         this.nric = nric;
         this.race = race;
@@ -110,12 +107,12 @@ public class FillInRegistrationFormStepOne implements Task {
         //new WebDriverWait(getDriver(), 30).until(visibilityOfElementLocated(By.cssSelector("._ksh")));
         //new WebDriverWait(getDriver(), 30).until(visibilityOfElementLocated(By.cssSelector("._ksh")));
 
-        actor.attemptsTo(new ScrollToTarget(PublicRegistrationPage.BUTTON));
-        actor.attemptsTo(new ClickOnTarget(PublicRegistrationPage.BUTTON));
+        //actor.attemptsTo(new ScrollToTarget(PublicRegistrationPage.REVIEW_BUTTON));
+        //actor.attemptsTo(new ClickOnTarget(PublicRegistrationPage.REVIEW_BUTTON));
     }
 
-    public static FillInRegistrationFormStepOne enterDetails(String full_name, String nric, String race, String mobile, String email, String postal_code){
-        return instrumented(FillInRegistrationFormStepOne.class, full_name, nric, race, mobile, email, postal_code);
+    public static FillInRegistrationFormCommonFields enterDetails(String full_name, String nric, String race, String mobile, String email, String postal_code){
+        return instrumented(FillInRegistrationFormCommonFields.class, full_name, nric, race, mobile, email, postal_code);
     }
 
 }

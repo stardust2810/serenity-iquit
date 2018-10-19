@@ -5,12 +5,12 @@ import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.annotations.DefaultUrl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
 
-@DefaultUrl("http://18.136.62.147/register")
-public class PublicRegistrationPage extends PageObject {
+@DefaultUrl("http://18.136.62.147/register_eo")
+public class EORegistrationPage extends PageObject {
 
-    private static Logger log = LogManager.getLogger(PublicRegistrationPage.class);
+    private static Logger log = LogManager.getLogger(EORegistrationPage.class);
 
     //main landing page
     public static Target FULLNAME = Target.the("full name").locatedBy("#full_name");
@@ -33,6 +33,18 @@ public class PublicRegistrationPage extends PageObject {
     public static Target SUPPORTER_NAME = Target.the("nominated_supporter_name").locatedBy("#nominated_supporter_name");
     public static Target SUPPORTER_MOBILE = Target.the("nominated_supporter_mobile_number").locatedBy("#nominated_supporter_mobile_number");
     public static Target LANGUAGE = Target.the("nominated_supporter_language_preference_for_SMS_Chinese").locatedBy("#nominated_supporter_language_preference_for_SMS_Chinese");
+
+    //roadshow information
+    public static Target SIGNUP_CHANNEL = Target.the("signup_channel").locatedBy("#signup_channel");
+    public static Target ROADSHOW_NAME = Target.the("roadshow_name").locatedBy("#roadshow_name");
+    public static Target ROADSHOW_LOCATION = Target.the("roadshow_location").locatedBy("#roadshow_location");
+    public static Target EO_COMPANY = Target.the("event_organiser_company").locatedBy("#event_organiser_company");
+    public static Target STAFF_ID = Target.the("staff_id").locatedBy("#staff_id");
+
+    //Validation
+    public static Target VALIDATION_QUIT_PACK = Target.the("validation_quit_pack").locatedBy("#validation_quit_pack");
+    public static Target SMOKERLYSER_RESULT = Target.the("validation_smokerlyser_test_result").locatedBy("#validation_smokerlyser_test_result");
+    public static Target VALIDATION_REMARKS = Target.the("validation_remarks").locatedBy("#validation_remarks");
 
     //T&Cs
     public static Target TERMS = Target.the("accept_terms").locatedBy("#accept_terms");
