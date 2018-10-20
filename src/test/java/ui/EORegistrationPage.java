@@ -15,7 +15,7 @@ public class EORegistrationPage extends PageObject {
     //main landing page
     public static Target FULLNAME = Target.the("full name").locatedBy("#full_name");
     public static Target NRIC = Target.the("nric").locatedBy("#nric");
-    public static Target GENDER = Target.the("gender").located(By.cssSelector("input[name='gender'][value='M']"));
+    public static Target GENDER = Target.the("gender").locatedBy("input[name='gender'][value='M']");
     public static Target RACE = Target.the("race").locatedBy("#race");
     public static Target YEAR_OF_BIRTH = Target.the("year_of_birth").locatedBy("#year_of_birth");
     public static Target MOBILE_NO = Target.the("mobile_number").locatedBy("#mobile_number");

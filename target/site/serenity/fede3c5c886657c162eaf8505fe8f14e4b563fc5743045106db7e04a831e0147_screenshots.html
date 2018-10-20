@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Automated testing of I QUIT Portal using Serenity and Cucumber</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <a
+                    href="e35851d09d865e3a1764bc3c793cb2234b9dfaf280a3e065033d18dbd6d96392.html">Member Of Public Registers On The I Quit&hellip;</a>
+                > <a
+                    href="fede3c5c886657c162eaf8505fe8f14e4b563fc5743045106db7e04a831e0147.html">EO registers a member of public </a>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 20-10-2018 21:28</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Member Of Public Registers On The I Quit Page </span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                In order to participate in the I QUIT 28 days countdown programme
+As a member of public
+I want to register my details in the I QUIT registration page (online)
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="a9233787f1c78ba98303aa7e63e0f6a7583dc4ea6e737e53481ec271854e4469.html">Public Registration
+                                    (capability)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-3x' title='FAILURE'></i></span>
+                            <span class="test-case-title">
+                                <span class="failing-color">EO Registers A Member Of Public
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+                <div class="panel-heading"><span class='error-caption ellipsis'>FAILURE: Assertion error: Expected: a value eq...</span></div>
+                <div class="panel-body">
+                    <a href="pagesource6735284817157574007.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="scaled_90b97cca79e74990b4a96e0aa47394966adf36208f29b30708cd43bf0f0a0334.png" title="'Amy Tan' opens the Eo registration page" width="960"/>
+                <img src="scaled_becb9747eb3f40d59b8f0805a57226eb0487a5e37e22b3cdbe0a0d5e878969a1.png" title="'Amy Tan' clicks on race" width="960"/>
+                <img src="scaled_a69b5e807aeb200847d30028beb1897b72d6236ea96a919e2e5df102b7c1484d.png" title="'Amy Tan' clicks on race" width="960"/>
+                <img src="scaled_4e7d4a2df2e79346bd3769aa7f862ca81b4a23a02a2f43843aec2c0c8fd303e3.png" title="'Amy Tan' clicks on year_of_birth" width="960"/>
+                <img src="scaled_3183572ce3810419eaf2cbfda9892542986afbdf308eadbb442d1c39408f60be.png" title="'Amy Tan' clicks on year_of_birth" width="960"/>
+                <img src="scaled_bf804861ea385a237571316e502663c8bf1d3e2ec0816e257e520fa4911481ad.png" title="'Amy Tan' clicks on have_you_tried_quitting_before" width="960"/>
+                <img src="scaled_e1c40dbf1a376bc4c03544ebc7cb5bb969fed5e61713746b56c6a46e2e3cc7d1.png" title="'Amy Tan' clicks on have_you_tried_quitting_before" width="960"/>
+                <img src="scaled_bacadb4ebe9cefd92925ce9a75382eefa54d6905441c1ebe72e89df8f1bfcb1d.png" title="'Amy Tan' clicks on do_you_need_quitline_assistance" width="960"/>
+                <img src="scaled_769e8ef8353a80672f8e3b5dd95aad2ca873cdf883ed4dfe7df35f25d8bfeb4a.png" title="'Amy Tan' clicks on do_you_need_quitline_assistance" width="960"/>
+                <img src="scaled_302448b501a049d904d444f2b4ad027aefe7691e8e5479d8bd3f00035cfe9410.png" title="'Amy Tan' clicks on signup_channel" width="960"/>
+                <img src="scaled_4533eba133a86d91e5b79eeebfa9553a5d07fb776122571584ae441fb2dbe449.png" title="'Amy Tan' clicks on signup_channel" width="960"/>
+                <img src="4533eba133a86d91e5b79eeebfa9553a5d07fb776122571584ae441fb2dbe449.png" title="'Amy Tan' clicks on roadshow_name" width="960"/>
+                <img src="scaled_d2a6b4bff6b04ee0d604fef58f78d3fe876284b5eca65b7eadb91e0ab82228d3.png" title="'Amy Tan' clicks on roadshow_name" width="960"/>
+                <img src="d2a6b4bff6b04ee0d604fef58f78d3fe876284b5eca65b7eadb91e0ab82228d3.png" title="'Amy Tan' clicks on roadshow_location" width="960"/>
+                <img src="scaled_3e0247196662078b7b6f6552b9b7bc682f0196b53be86ad17ccb0cbac7e2d8c5.png" title="'Amy Tan' clicks on roadshow_location" width="960"/>
+                <img src="3e0247196662078b7b6f6552b9b7bc682f0196b53be86ad17ccb0cbac7e2d8c5.png" title="'Amy Tan' clicks on event_organiser_company" width="960"/>
+                <img src="scaled_e524eb95551495a00dee91644faca3fdf3cc17ba5e9ce732c4084a1f0b10fd57.png" title="'Amy Tan' clicks on event_organiser_company" width="960"/>
+                <img src="scaled_4099aa739227013aa4db552ae3e20174cf1384f8683e36461a0e6316ce5c76b5.png" title="Then Show the confirmation page before submitting the registration should be a value equal to (true)" width="960"/>
+                <img src="4099aa739227013aa4db552ae3e20174cf1384f8683e36461a0e6316ce5c76b5.png" title="Then Show the confirmation page before submitting the registration should be a value equal to (true): <span class='failing-color'>FAILURE</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.5.1</span>
+</div>
+</body>
+</html>

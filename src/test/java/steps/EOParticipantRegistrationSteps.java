@@ -12,7 +12,7 @@ import questions.RegistrationReviewResults;
 import tasks.ClickConfirmRegistrationForm;
 import tasks.FillInRegistrationFormCommonFields;
 import tasks.FillInRegistrationFormEOFields;
-import tasks.OpenPublicRegistrationPage;
+import tasks.OpenEORegistrationPage;
 import ui.EORegistrationPage;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
@@ -41,7 +41,7 @@ public class EOParticipantRegistrationSteps {
     @Given("^(.*) registers a member of public$")
     public void registers_a_member_of_public(String actorName) throws Throwable {
         //loads the landing page
-        theActorCalled(actorName).wasAbleTo(OpenPublicRegistrationPage.open());
+        theActorCalled(actorName).wasAbleTo(OpenEORegistrationPage.open());
 
         //fills in the step 1 form
         theActorCalled(actorName).attemptsTo(FillInRegistrationFormCommonFields.enterDetails("Jeffrey Ng", "S9999999X", "Chinese", "99999999", "jeffrey_NG@hpb.gov.sg", "111111"));

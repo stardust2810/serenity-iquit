@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.thoughtworks.gauge:gauge-java:0.6.9">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.thoughtworks.gauge/gauge-java/0.6.9/529b642851af1358a54ebd28d0819fb5dc9437b6/gauge-java-0.6.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.thoughtworks.gauge/gauge-java/0.6.9/ae14ec8742c5052bb7819551220c6bbbb09b98e9/gauge-java-0.6.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
