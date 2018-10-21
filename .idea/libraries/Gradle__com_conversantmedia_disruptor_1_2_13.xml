@@ -4,6 +4,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.conversantmedia/disruptor/1.2.13/d9e3db0b123ef33320b860c8439efd980aaa4c63/disruptor-1.2.13.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.conversantmedia/disruptor/1.2.13/1e9047c54b1b88709c75586145ff264b3763b294/disruptor-1.2.13-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

@@ -391,11 +391,11 @@
 										<div class="form-group">
 											<div class="inputGroupContainer">
 												<input style="float:left;" id="accept_terms" name="accept_terms" data-bv-field="accept_terms" value="1" type="checkbox"><p style="font-size:12px; text-align:left;">&nbsp;&nbsp;&nbsp;I Agree with the <a href="Https://www.healthhub.sg/sites/assets/Assets/PDFs/HPB/Substance%20Abuse/IQuit-Terms-and-Conditions.pdf" target="_blank">Terms &amp; Conditions</a> governing participation in the I Quit 28-Day Countdown.</p>
-											<div class="register_error" style="font-size:12px; font-family:arial; color: red;">Please agree the terms and conditions.</div></div>                        			
+											</div>                        			
 										</div>
 										<div class="form-group">
 											<div class="inputGroupContainer">												
-												<img id="captcha" src="/securimage/securimage_show.php?0.8037614651453495" alt="CAPTCHA Image">
+												<img id="captcha" src="/securimage/securimage_show.php?0.9134673417947462" alt="CAPTCHA Image">
 												<input id="captcha_code" name="captcha_code" size="10" maxlength="6" type="text">
 												<a id="reset_captcha" href="#" onclick="document.getElementById('captcha').src = '/securimage/securimage_show.php?' + Math.random(); return false">[ Different Image ]</a>
 											</div><div class="register_error" style="font-size:12px; font-family:arial; color: red;">The security code entered was incorrect.</div>                        			

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="Member of public registers on the I QUIT page" skipped="0" tests="2" time="403.58" timestamp="2018-10-20T21:26:18.331300200+08:00[Asia/Singapore]"><testcase name="Participant registers for an account"><failure message="&#10;Expected: a value equal to &lt;true&gt;&#10;     but: &lt;false&gt; was less than &lt;true&gt;" type="java.lang.AssertionError">
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="Member of public registers on the I QUIT page" skipped="0" tests="2" time="44.0" timestamp="2018-10-20T22:55:26.737729300+08:00[Asia/Singapore]"><testcase name="Participant registers for an account"><failure message="&#10;Expected: a value equal to &lt;true&gt;&#10;     but: &lt;false&gt; was less than &lt;true&gt;" type="java.lang.AssertionError">
 Expected: a value equal to &lt;true&gt;
      but: &lt;false&gt; was less than &lt;true&gt;</failure><system-err>
 Expected: a value equal to &lt;true&gt;

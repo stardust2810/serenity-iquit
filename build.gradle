@@ -1,9 +1,20 @@
+/*
+plugins {
+    id "java"
+    id "com.thoughtworks.gauge" version "1.7.2"
+    //id "net.serenity-bdd.aggregator" version "1.5.3"
+}
+*/
+
 apply plugin: 'java'
 apply plugin: 'gauge'
-apply plugin: 'eclipse'
-apply plugin: 'idea'
+//apply plugin: 'eclipse'
+//apply plugin: 'idea'
 apply plugin: 'net.serenity-bdd.aggregator'
 apply plugin: 'com.thoughtworks.gauge'
+
+
+
 
 group = "iquit-tests"
 version = "1.0.0"
@@ -41,7 +52,7 @@ dependencies {
             'com.thoughtworks.gauge:gauge-java:+',
             'net.sourceforge.htmlunit:webdriver:2.6',
             'junit:junit:4.12'
-    )    
+    )
     */
     testCompile 'com.thoughtworks.gauge:gauge-java:+'
     //testCompile 'gradle.plugin.com.thoughtworks.gauge.gradle:gauge-gradle-plugin:1.7.2'
@@ -53,7 +64,7 @@ dependencies {
     testCompile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.1'
     testCompile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: '2.11.1'
     testCompile('org.assertj:assertj-core:1.7.0')
-    
+
     testCompile group: 'com.conversantmedia', name: 'disruptor', version: '1.2.13'
     testCompile group: 'javax.jms', name: 'javax.jms-api', version: '2.0'
     testCompile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.0.1'
