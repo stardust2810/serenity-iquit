@@ -20,6 +20,8 @@ gradle-app.setting
 bin/
 gen/
 build/
+target/
+out/
 
 
 # Android Studio
